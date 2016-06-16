@@ -4,8 +4,8 @@
  *
  * @author jorge, @date 6/14/16 8:26 PM
  */
-public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+public class Person {
+    public void speak() {
+        System.out.println("Hello!");
     }
 }
