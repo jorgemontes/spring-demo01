@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="person" class="Person">
+		<constructor-arg value="666" index="0" name="id" type="int"></constructor-arg>
+		<constructor-arg value="George" index="1" name="name"
+			type="String">
+		</constructor-arg>
+	</bean>
+</beans>

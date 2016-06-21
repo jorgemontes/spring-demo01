@@ -5,7 +5,25 @@
  * @author jorge, @date 6/14/16 8:26 PM
  */
 public class Person {
-    public void speak() {
-        System.out.println("Hello!");
-    }
+	private int id;
+	private String name;
+
+	public Person(){
+		
+	}
+	public Person(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public void speak() {
+		System.out.println("Hello!");
+	}
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + "]";
+	}
+
 }
