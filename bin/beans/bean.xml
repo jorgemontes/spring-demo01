@@ -9,5 +9,8 @@
 		<constructor-arg value="George" index="1" name="name"
 			type="String">
 		</constructor-arg>
+		<property name="taxId">
+			<value>123</value>
+		</property>
 	</bean>
 </beans>
