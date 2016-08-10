@@ -12,5 +12,10 @@
 		<property name="taxId">
 			<value>123</value>
 		</property>
+		<property name="address" ref="address"></property>
+	</bean>
+	<bean id="address" class="Address">
+		<constructor-arg name="street" value="1 Chrurch Lane"></constructor-arg>
+		<constructor-arg name="postcode" value="6666"></constructor-arg>
 	</bean>
 </beans>

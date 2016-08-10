@@ -7,6 +7,10 @@ public class App {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans/bean.xml");
 		Person person = (Person) context.getBean("person");
 		person.speak();
+		
+		Address address = (Address)context.getBean("address");
+		System.out.println(address);
+		
 		System.out.println(person);
 		((ClassPathXmlApplicationContext) context).close();
 	}
