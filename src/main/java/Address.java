@@ -9,6 +9,10 @@ public class Address {
 		this.street = street;
 		this.postcode = postcode;
 	}
+	
+	public void init(){
+		System.out.println("bean created: "+this);
+	}
 
 	@Override
 	public String toString() {
