@@ -19,6 +19,11 @@ public class Person {
 		this.id = id;
 		this.name = name;
 	}
+	
+	public static Person getInstance(){
+		System.out.println("Creating Person using factory method");
+		return new Person(1234,"Bob");
+	}
 
 	public void setAddress(Address address) {
 		this.address = address;
